@@ -38,7 +38,7 @@ public class Main {
         try {
             ArrayBlockingQueue<JSONObject> inQ = new ArrayBlockingQueue<>(256);
             ArrayBlockingQueue<JSONObject> outQ = new ArrayBlockingQueue<>(256);
-            String serverUrl = "http://127.0.0.1:999/javaWebRTC";
+            String serverUrl = "http://192.168.56.1:999/javaWebRTC";
             int id = 0;
             PeerConnection peerConnection = new PeerConnection(serverUrl,inQ,outQ,id);
         }catch (Exception e){
